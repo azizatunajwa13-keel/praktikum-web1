@@ -32,3 +32,10 @@ Sasirangan Banua memperkenalkan motif kain tradisional dari Kalimantan Selatan m
 - HTML5
 - CSS3
 - Git dan GitHub
+
+## Hasil Pengujian
+
+- Halaman utama berhasil dibuka di browser.
+- Enam gambar motif Sasirangan berhasil ditampilkan.
+- Navigasi menuju halaman kontak berfungsi.
+- Formulir pemesanan dapat ditampilkan dan diisi.
