@@ -1,341 +1,90 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak dan Pemesanan | Sasirangan Banua</title>
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Katalog kain dan busana Sasirangan khas Banjarmasin
+        karya pengrajin lokal.">
+    <title>Sasirangan Banua | Kain Khas Banjar</title>
+    <link rel="stylesheet" href="css/style.css">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --marun: #7d2638;
-            --merah: #a33d4d;
-            --krem: #fff8ed;
-            --emas: #d6a75c;
-            --gelap: #30252a;
-            --putih: #ffffff;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.7;
-            color: var(--gelap);
-            background: var(--krem);
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 850px;
-            margin: auto;
-        }
-
-        header {
-            background: var(--marun);
-            color: var(--putih);
-            padding: 16px 0;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            font-size: 23px;
-            font-weight: bold;
-        }
-
-        nav {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        nav a:hover {
-            color: var(--emas);
-        }
-
-        .intro {
-            background: linear-gradient(135deg, #7d2638, #a94b55);
-            color: var(--putih);
-            padding: 45px 0;
-            text-align: center;
-        }
-
-        .intro h1 {
-            font-size: clamp(28px, 5vw, 40px);
-            margin-bottom: 8px;
-        }
-
-        .intro p {
-            color: #fff0e9;
-        }
-
-        main {
-            padding: 45px 0 65px;
-        }
-
-        .form-card {
-            background: var(--putih);
-            padding: 30px;
-            border: 1px solid #eadbd4;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px #4c26300d;
-        }
-
-        .form-card h2 {
-            color: var(--marun);
-            margin-bottom: 8px;
-        }
-
-        .description {
-            margin-bottom: 24px;
-            color: #65575a;
-        }
-
-        .form-group {
-            margin-bottom: 18px;
-        }
-
-        label,
-        legend {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 7px;
-        }
-
-        input,
-        select,
-        textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #cbb9b5;
-            border-radius: 6px;
-            font: inherit;
-            background: #fffdfb;
-        }
-
-        input:focus,
-        select:focus,
-        textarea:focus {
-            outline: 2px solid var(--emas);
-            border-color: var(--marun);
-        }
-
-        fieldset {
-            border: 1px solid #cbb9b5;
-            border-radius: 6px;
-            padding: 14px;
-            margin-bottom: 18px;
-        }
-
-        fieldset label {
-            display: flex;
-            align-items: center;
-            gap: 9px;
-            font-weight: normal;
-            margin: 8px 0;
-        }
-
-        fieldset input {
-            width: auto;
-        }
-
-        .agreement {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            margin-bottom: 22px;
-        }
-
-        .agreement input {
-            width: auto;
-            margin-top: 7px;
-        }
-
-        .agreement label {
-            font-weight: normal;
-        }
-
-        button {
-            width: 100%;
-            padding: 13px;
-            border: none;
-            border-radius: 6px;
-            background: var(--marun);
-            color: var(--putih);
-            font: inherit;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: var(--merah);
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-top: 22px;
-            color: var(--marun);
-            font-weight: bold;
-        }
-
-        footer {
-            background: #30252a;
-            color: var(--putih);
-            text-align: center;
-            padding: 25px 0;
-        }
-
-        footer p {
-            font-size: 14px;
-            color: #e6d9d9;
-        }
-
-        @media (max-width: 550px) {
-            .navbar {
-                flex-direction: column;
-            }
-
-            nav {
-                justify-content: center;
-            }
-
-            .form-card {
-                padding: 20px;
-            }
-        }
-    </style>
 </head>
-
 <body>
-    <header>
-        <div class="container navbar">
-            <a class="logo" href="index.html">Sasirangan Banua</a>
+    <!-- ========== HEADER & NAVIGASI ========== -->
+<header class="header-situs">
+ <p class="logo"><a href="index.html">Sasirangan Banua</a></p>
+ <nav aria-label="Navigasi utama">
+ <ul class="menu">
+ <li><a href="index.html" aria-current="page">Beranda</a></li>
+ <li><a href="#katalog">Katalog</a></li>
+ <li><a href="#tentang">Tentang</a></li>
+ <li><a href="kontak.html">Pesan</a></li>
+ </ul>
+ </nav>
+</header>
+<main><section class="bagian" id="pesan">
+<h1>Formulir Pemesanan</h1>
+<p>Isi formulir berikut. Kolom bertanda <strong>*</strong> wajib diisi.</p>
 
-            <nav>
-                <a href="index.html">Beranda</a>
-                <a href="index.html#produk">Produk</a>
-                <a href="index.html#tentang">Tentang</a>
-                <a href="kontak.html">Kontak</a>
-            </nav>
-        </div>
-    </header>
+<form id="form-pesan" class="form-pesan" action="#" method="get">
+<div class="kolom">
+<label for="nama">Nama lengkap *</label>
+<input type="text" id="nama" name="nama" required minlength="3"
+autocomplete="name">
+</div>
 
-    <section class="intro">
-        <div class="container">
-            <h1>Kontak dan Pemesanan</h1>
-            <p>Isi formulir berikut untuk mencatat permintaan pemesanan kain Sasirangan.</p>
-        </div>
-    </section>
+<div class="kolom">
+<label for="wa">Nomor WhatsApp *</label>
+<input type="tel" id="wa" name="wa" required pattern="08[0-9]{8,11}"
+placeholder="Contoh: 081234567890" autocomplete="tel">
+</div>
 
-    <main>
-        <div class="container">
-            <div class="form-card">
-                <h2>Formulir Pemesanan</h2>
-                <p class="description">
-                    Lengkapi data di bawah ini dengan benar.
-                    Kolom bertanda wajib harus diisi.
-                </p>
+<div class="kolom">
+<label for="email">Surel</label>
+<input type="email" id="email" name="email" autocomplete="email">
+</div>
 
-                <form action="#" method="get">
-                    <div class="form-group">
-                        <label for="nama">Nama lengkap *</label>
-                        <input type="text" id="nama" name="nama"
-                               placeholder="Masukkan nama lengkap"
-                               autocomplete="name" required>
-                    </div>
+<div class="kolom">
+<label for="produk">Produk yang dipesan *</label>
+<select id="produk" name="produk" required>
+<option value="">-- Pilih produk --</option>
+<option>Kain Motif Gigi Haruan</option>
+<option>Kain Motif Kambang Kacang</option>
+<option>Selendang Iris Pudak</option>
+<option>Kemeja Bayam Raja</option>
+<option>Tas Naga Balimbur</option>
+<option>Gamis Ombak Sinapur Karang</option>
+</select>
+</div>
 
-                    <div class="form-group">
-                        <label for="whatsapp">Nomor WhatsApp *</label>
-                        <input type="tel" id="whatsapp" name="whatsapp"
-                               placeholder="Contoh: 081234567890"
-                               autocomplete="tel" required>
-                    </div>
+<div class="kolom">
+<label for="jumlah">Jumlah *</label>
+<input type="number" id="jumlah" name="jumlah" min="1" max="50" value="1" required>
+</div>
 
-                    <div class="form-group">
-                        <label for="email">Alamat email *</label>
-                        <input type="email" id="email" name="email"
-                               placeholder="nama@email.com"
-                               autocomplete="email" required>
-                    </div>
+<fieldset>
+<legend>Metode pengambilan *</legend>
+<label><input type="radio" name="pengambilan" value="Ambil di galeri" checked>
+Ambil di galeri</label>
+<label><input type="radio" name="pengambilan" value="Dikirim ke alamat"> Dikirim
+ke alamat</label>
+</fieldset>
 
-                    <div class="form-group">
-                        <label for="produk">Pilih motif kain *</label>
-                        <select id="produk" name="produk" required>
-                            <option value="">-- Pilih motif --</option>
-                            <option value="gigi-haruan">Gigi Haruan</option>
-                            <option value="kambang-kacang">Kambang Kacang</option>
-                            <option value="iris-pudak">Iris Pudak</option>
-                            <option value="naga-balimbur">Naga Balimbur</option>
-                            <option value="ombak-sinapur-karang">Ombak Sinapur Karang</option>
-                            <option value="bayam-raja">Bayam Raja</option>
-                        </select>
-                    </div>
+<div class="kolom">
+<label for="catatan">Catatan tambahan</label>
+<textarea id="catatan" name="catatan" rows="4" maxlength="300"
+placeholder="Contoh: ukuran L, warna dominan merah"></textarea>
+</div>
 
-                    <div class="form-group">
-                        <label for="jumlah">Jumlah kain *</label>
-                        <input type="number" id="jumlah" name="jumlah"
-                               min="1" value="1" required>
-                    </div>
+<label class="cek">
+<input type="checkbox" id="setuju" name="setuju" required>
+Saya setuju data ini hanya dipakai untuk memproses pesanan. *
+</label>
 
-                    <fieldset>
-                        <legend>Metode penerimaan *</legend>
-
-                        <label for="ambil">
-                            <input type="radio" id="ambil" name="metode"
-                                   value="ambil-sendiri" required>
-                            Ambil sendiri
-                        </label>
-
-                        <label for="antar">
-                            <input type="radio" id="antar" name="metode"
-                                   value="pengiriman">
-                            Pengiriman
-                        </label>
-                    </fieldset>
-
-                    <div class="form-group">
-                        <label for="catatan">Catatan tambahan</label>
-                        <textarea id="catatan" name="catatan" rows="4"
-                                  placeholder="Tuliskan catatan atau permintaan tambahan"></textarea>
-                    </div>
-
-                    <div class="agreement">
-                        <input type="checkbox" id="persetujuan"
-                               name="persetujuan" required>
-                        <label for="persetujuan">
-                            Saya memastikan bahwa informasi yang saya isi sudah benar.
-                        </label>
-                    </div>
-
-                    <button type="submit">Kirim Formulir</button>
-                </form>
-
-                <a class="back-link" href="index.html">&larr; Kembali ke halaman utama</a>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p><strong>Sasirangan Banua</strong></p>
-            <p>&copy; 2026 Sasirangan Banua. Dibuat untuk praktikum Pemrograman Web 1.</p>
-        </div>
-    </footer>
-</body>
-</html>
+<button type="submit" class="tombol">Kirim Pesanan</button>
+</form>
+</section></main>
+ <footer class="footer-situs">
+ <p>&copy; 2026 Sasirangan Banua &middot; Kampung Sasirangan, Banjarmasin</p>
+ <p>Dibuat oleh Nama Mahasiswa (NPM) &middot; Praktikum Pemrograman Web 1 UNISKA MAB</p>
+ </footer>
+ </html>
