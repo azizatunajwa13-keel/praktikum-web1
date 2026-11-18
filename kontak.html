@@ -1,91 +1,317 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Katalog kain dan busana Sasirangan khas Banjarmasin
-        karya pengrajin lokal.">
-    <title>Sasirangan Banua | Kain Khas Banjar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Formulir pemesanan kain dan busana Sasirangan khas Banjarmasin."
+    >
+
+    <title>Formulir Pemesanan | Sasirangan Banua</title>
+
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="js/form.js" defer></script>
 </head>
+
 <body>
+
     <!-- ========== HEADER & NAVIGASI ========== -->
-<header class="header-situs">
- <p class="logo"><a href="index.html">Sasirangan Banua</a></p>
- <nav aria-label="Navigasi utama">
- <ul class="menu">
- <li><a href="index.html" aria-current="page">Beranda</a></li>
- <li><a href="#katalog">Katalog</a></li>
- <li><a href="#tentang">Tentang</a></li>
- <li><a href="kontak.html">Pesan</a></li>
- </ul>
- </nav>
-</header>
-<main><section class="bagian" id="pesan">
-<h1>Formulir Pemesanan</h1>
-<p>Isi formulir berikut. Kolom bertanda <strong>*</strong> wajib diisi.</p>
+    <header class="header-situs">
 
-<form id="form-pesan" class="form-pesan" action="#" method="get">
-<div class="kolom">
-<label for="nama">Nama lengkap *</label>
-<input type="text" id="nama" name="nama" required minlength="3"
-autocomplete="name">
-</div>
+        <p class="logo">
+            <a href="index.html">Sasirangan Banua</a>
+        </p>
 
-<div class="kolom">
-<label for="wa">Nomor WhatsApp *</label>
-<input type="tel" id="wa" name="wa" required pattern="08[0-9]{8,11}"
-placeholder="Contoh: 081234567890" autocomplete="tel">
-</div>
+        <nav aria-label="Navigasi utama">
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Beranda</a>
+                </li>
 
-<div class="kolom">
-<label for="email">Surel</label>
-<input type="email" id="email" name="email" autocomplete="email">
-</div>
+                <li>
+                    <a href="index.html#katalog">Katalog</a>
+                </li>
 
-<div class="kolom">
-<label for="produk">Produk yang dipesan *</label>
-<select id="produk" name="produk" required>
-<option value="">-- Pilih produk --</option>
-<option>Kain Motif Gigi Haruan</option>
-<option>Kain Motif Kambang Kacang</option>
-<option>Selendang Iris Pudak</option>
-<option>Kemeja Bayam Raja</option>
-<option>Tas Naga Balimbur</option>
-<option>Gamis Ombak Sinapur Karang</option>
-</select>
-</div>
+                <li>
+                    <a href="index.html#tentang">Tentang</a>
+                </li>
 
-<div class="kolom">
-<label for="jumlah">Jumlah *</label>
-<input type="number" id="jumlah" name="jumlah" min="1" max="50" value="1" required>
-</div>
+                <li>
+                    <a href="kontak.html" aria-current="page">Pesan</a>
+                </li>
+            </ul>
+        </nav>
 
-<fieldset>
-<legend>Metode pengambilan *</legend>
-<label><input type="radio" name="pengambilan" value="Ambil di galeri" checked>
-Ambil di galeri</label>
-<label><input type="radio" name="pengambilan" value="Dikirim ke alamat"> Dikirim
-ke alamat</label>
-</fieldset>
+    </header>
 
-<div class="kolom">
-<label for="catatan">Catatan tambahan</label>
-<textarea id="catatan" name="catatan" rows="4" maxlength="300"
-placeholder="Contoh: ukuran L, warna dominan merah"></textarea>
-</div>
 
-<label class="cek">
-<input type="checkbox" id="setuju" name="setuju" required>
-Saya setuju data ini hanya dipakai untuk memproses pesanan. *
-</label>
+    <main>
 
-<button type="submit" class="tombol">Kirim Pesanan</button>
-</form>
-</section></main>
- <footer class="footer-situs">
- <p>&copy; 2026 Sasirangan Banua &middot; Kampung Sasirangan, Banjarmasin</p>
- <p>Dibuat oleh Nama Mahasiswa (NPM) &middot; Praktikum Pemrograman Web 1 UNISKA MAB</p>
- </footer>
- </html>
- 
+        <!-- ========== FORMULIR PEMESANAN ========== -->
+        <section class="bagian" id="pesan">
+
+            <h1>Formulir Pemesanan</h1>
+
+            <p>
+                Silakan lengkapi formulir berikut untuk melakukan pemesanan
+                produk Sasirangan Banua.
+                Kolom bertanda <strong>*</strong> wajib diisi.
+            </p>
+
+
+            <form
+                id="form-pesan"
+                class="form-pesan"
+                action="#"
+                method="get"
+                novalidate
+            >
+
+                <!-- Nama lengkap -->
+                <div class="kolom">
+
+                    <label for="nama">Nama lengkap *</label>
+
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        required
+                        minlength="3"
+                        autocomplete="name"
+                        aria-describedby="error-nama"
+                    >
+
+                    <p class="pesan-error" id="error-nama"></p>
+
+                </div>
+
+
+                <!-- Nomor WhatsApp -->
+                <div class="kolom">
+
+                    <label for="wa">Nomor WhatsApp *</label>
+
+                    <input
+                        type="tel"
+                        id="wa"
+                        name="wa"
+                        required
+                        pattern="08[0-9]{8,11}"
+                        placeholder="Contoh: 081234567890"
+                        autocomplete="tel"
+                        aria-describedby="error-wa"
+                    >
+
+                    <p class="pesan-error" id="error-wa"></p>
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="kolom">
+
+                    <label for="email">Surel</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        aria-describedby="error-email"
+                    >
+
+                    <p class="pesan-error" id="error-email"></p>
+
+                </div>
+
+
+                <!-- Pilihan produk -->
+                <div class="kolom">
+
+                    <label for="produk">Produk yang dipesan *</label>
+
+                    <select
+                        id="produk"
+                        name="produk"
+                        required
+                        aria-describedby="error-produk"
+                    >
+
+                        <option value="">-- Pilih produk --</option>
+
+                        <option value="Kain Motif Gigi Haruan">
+                            Kain Motif Gigi Haruan
+                        </option>
+
+                        <option value="Kain Motif Kambang Kacang">
+                            Kain Motif Kambang Kacang
+                        </option>
+
+                        <option value="Selendang Iris Pudak">
+                            Selendang Iris Pudak
+                        </option>
+
+                        <option value="Kemeja Bayam Raja">
+                            Kemeja Bayam Raja
+                        </option>
+
+                        <option value="Kain Motif Naga Balim">
+                            Kain Motif Naga Balim
+                        </option>
+
+                        <option value="Kain Motif Ombak Sinapur Karang">
+                            Kain Motif Ombak Sinapur Karang
+                        </option>
+
+                    </select>
+
+                    <p class="pesan-error" id="error-produk"></p>
+
+                </div>
+
+
+                <!-- Jumlah produk -->
+                <div class="kolom">
+
+                    <label for="jumlah">Jumlah *</label>
+
+                    <input
+                        type="number"
+                        id="jumlah"
+                        name="jumlah"
+                        min="1"
+                        max="50"
+                        value="1"
+                        required
+                        aria-describedby="error-jumlah"
+                    >
+
+                    <p class="pesan-error" id="error-jumlah"></p>
+
+                </div>
+
+
+                <!-- Metode pengambilan -->
+                <fieldset>
+
+                    <legend>Metode pengambilan *</legend>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="pengambilan"
+                            value="Ambil di galeri"
+                            checked
+                        >
+                        Ambil di galeri
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="pengambilan"
+                            value="Dikirim ke alamat"
+                        >
+                        Dikirim ke alamat
+                    </label>
+
+                </fieldset>
+
+
+                <!-- Catatan tambahan -->
+                <div class="kolom">
+
+                    <label for="catatan">Catatan tambahan</label>
+
+                    <textarea
+                        id="catatan"
+                        name="catatan"
+                        rows="4"
+                        maxlength="300"
+                        placeholder="Contoh: ukuran L, warna dominan merah"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Persetujuan -->
+                <div class="kolom">
+
+                    <label class="cek">
+
+                        <input
+                            type="checkbox"
+                            id="setuju"
+                            name="setuju"
+                            required
+                            aria-describedby="error-setuju"
+                        >
+
+                        Saya setuju data ini hanya dipakai untuk memproses pesanan. *
+
+                    </label>
+
+                    <p class="pesan-error" id="error-setuju"></p>
+
+                </div>
+
+
+                <!-- Tombol kirim -->
+                <button type="submit" class="tombol">
+                    Kirim Pesanan
+                </button>
+
+            </form>
+
+
+            <!-- ========== HASIL PESANAN ========== -->
+            <div
+                id="hasil-pesan"
+                class="hasil-pesan"
+                hidden
+            >
+
+                <h2>Ringkasan Pesanan</h2>
+
+                <pre id="ringkasan"></pre>
+
+                <a
+                    id="tautan-wa"
+                    class="tombol"
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Lanjutkan ke WhatsApp
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer-situs">
+
+        <p>
+            &copy; 2026 Sasirangan Banua
+            &middot; Kampung Sasirangan, Banjarmasin
+        </p>
+
+        <p>
+            Dibuat oleh Azizatun Najwa 2510010412
+            &middot; Praktikum Pemrograman Web 1 UNISKA MAB
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
