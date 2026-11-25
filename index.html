@@ -9,11 +9,11 @@
         name="description"
         content="Katalog kain dan busana Sasirangan khas Banjarmasin karya pengrajin lokal."
     >
-
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <title>Sasirangan Banua | Kain Khas Banjar</title>
-
     <link rel="stylesheet" href="css/style.css">
     <script src="js/katalog.js" defer></script>
+    <script src="js/jadwal-salat.js" defer></script>    
 </head>
 
 <body>
@@ -47,7 +47,6 @@
 
     </header>
 
-
     <main>
 
         <!-- ========== HERO ========== -->
@@ -66,7 +65,6 @@
             </a>
 
         </section>
-
 
         <!-- ========== KATALOG PRODUK ========== -->
         <section class="bagian" id="katalog">
@@ -225,6 +223,24 @@
             </table>
 
         </section>
+    
+<!-- ========== JADWAL SALAT ========== -->
+<section class="bagian" id="jadwal">
+    <div class="jadwal-salat" id="jadwal-salat">
+
+        <h2>Jadwal Salat Banjarmasin</h2>
+
+        <p class="status">Memuat jadwal salat...</p>
+
+        <ul class="daftar-waktu" hidden></ul>
+
+        <p class="sumber">
+            Sumber: API MyQuran
+        </p>
+
+    </div>
+</section>
+
 
     </main>
 

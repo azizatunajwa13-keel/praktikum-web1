@@ -1,0 +1,163 @@
+
+[
+  {
+    "id": 1,
+    "nama": "Kain Sasirangan Merah",
+    "kategori": "kain",
+    "harga": 185000,
+    "gambar": "img/kain-sasirangan-merah.jpg",
+    "deskripsi": "Kain bermotif tradisional dengan warna merah dan corak dekoratif."
+  },
+  {
+    "id": 2,
+    "nama": "Kain Sasirangan Merah Gantung",
+    "kategori": "kain",
+    "harga": 190000,
+    "gambar": "img/kain-sasirangan-merah-gantung.jpg",
+    "deskripsi": "Kain merah dengan motif khas yang ditampilkan sebagai dekorasi."
+  },
+  {
+    "id": 3,
+    "nama": "Kain Sasirangan Biru",
+    "kategori": "kain",
+    "harga": 185000,
+    "gambar": "img/kain-sasirangan-biru.jpg",
+    "deskripsi": "Kain bernuansa biru dengan kombinasi motif bunga dan geometris."
+  },
+  {
+    "id": 4,
+    "nama": "Selendang Sasirangan Ungu",
+    "kategori": "aksesoris",
+    "harga": 125000,
+    "gambar": "img/selendang-sasirangan-ungu.jpg",
+    "deskripsi": "Selendang ungu bermotif dekoratif untuk melengkapi penampilan."
+  },
+  {
+    "id": 5,
+    "nama": "Kain Sasirangan Hijau",
+    "kategori": "kain",
+    "harga": 180000,
+    "gambar": "img/detail-kain-sasirangan-hijau.jpg",
+    "deskripsi": "Kain hijau dengan detail motif bunga berwarna cerah."
+  },
+  {
+    "id": 6,
+    "nama": "Kemeja Sasirangan Biru",
+    "kategori": "pakaian",
+    "harga": 225000,
+    "gambar": "img/kemeja-sasirangan-biru.jpg",
+    "deskripsi": "Kemeja pria bernuansa biru dengan motif dekoratif."
+  },
+  {
+    "id": 7,
+    "nama": "Dress Sasirangan Merah",
+    "kategori": "pakaian",
+    "harga": 275000,
+    "gambar": "img/dress-sasirangan-merah.jpg",
+    "deskripsi": "Dress merah bermotif dekoratif dengan potongan feminin."
+  },
+  {
+    "id": 8,
+    "nama": "Busana Sasirangan Hitam",
+    "kategori": "pakaian",
+    "harga": 285000,
+    "gambar": "img/busana-sasirangan-hitam.jpg",
+    "deskripsi": "Busana hitam dengan detail motif bernuansa emas."
+  },
+  {
+    "id": 9,
+    "nama": "Blus Sasirangan Kuning",
+    "kategori": "pakaian",
+    "harga": 235000,
+    "gambar": "img/blus-sasirangan-kuning.jpg",
+    "deskripsi": "Blus kuning dengan motif dekoratif yang menarik."
+  },
+  {
+    "id": 10,
+    "nama": "Busana Sasirangan Ungu",
+    "kategori": "pakaian",
+    "harga": 280000,
+    "gambar": "img/busana-sasirangan-ungu.jpg",
+    "deskripsi": "Busana ungu dengan detail motif bunga."
+  },
+  {
+    "id": 11,
+    "nama": "Ikat Kepala Sasirangan Merah",
+    "kategori": "aksesoris",
+    "harga": 65000,
+    "gambar": "img/ikat-kepala-sasirangan-merah.jpg",
+    "deskripsi": "Ikat kepala kain merah dengan motif dekoratif."
+  },
+  {
+    "id": 12,
+    "nama": "Ikat Kepala Sasirangan Biru",
+    "kategori": "aksesoris",
+    "harga": 65000,
+    "gambar": "img/ikat-kepala-sasirangan-biru.jpg",
+    "deskripsi": "Ikat kepala kain biru sebagai pelengkap penampilan."
+  },
+  {
+    "id": 13,
+    "nama": "Anting Emas Motif Bunga",
+    "kategori": "aksesoris",
+    "harga": 85000,
+    "gambar": "img/anting-emas.jpg",
+    "deskripsi": "Anting dengan desain ornamen bunga berwarna emas."
+  },
+  {
+    "id": 14,
+    "nama": "Bros Emas Motif Bunga",
+    "kategori": "aksesoris",
+    "harga": 75000,
+    "gambar": "img/bros-emas.jpg",
+    "deskripsi": "Bros dekoratif berbentuk bunga untuk aksesori busana."
+  },
+  {
+    "id": 15,
+    "nama": "Tas Sasirangan Merah",
+    "kategori": "aksesoris",
+    "harga": 95000,
+    "gambar": "img/tas-sasirangan-merah.jpg",
+    "deskripsi": "Tas kain merah dengan motif dekoratif."
+  },
+  {
+    "id": 16,
+    "nama": "Dompet Sasirangan Hitam",
+    "kategori": "aksesoris",
+    "harga": 80000,
+    "gambar": "img/dompet-sasirangan-hitam.jpg",
+    "deskripsi": "Dompet hitam bermotif dekoratif dengan desain praktis."
+  },
+  {
+    "id": 17,
+    "nama": "Kain Sasirangan Ungu",
+    "kategori": "kain",
+    "harga": 185000,
+    "gambar": "img/kain-sasirangan-ungu.jpg",
+    "deskripsi": "Kain ungu dengan motif bunga dan corak dekoratif."
+  },
+  {
+    "id": 18,
+    "nama": "Sepatu Motif Sasirangan",
+    "kategori": "aksesoris",
+    "harga": 175000,
+    "gambar": "img/sepatu-motif-sasirangan.jpg",
+    "deskripsi": "Sepatu dengan detail motif kain bernuansa tradisional."
+  },
+  {
+    "id": 19,
+    "nama": "Gelang Emas Motif Ukiran",
+    "kategori": "aksesoris",
+    "harga": 90000,
+    "gambar": "img/gelang-emas.jpg",
+    "deskripsi": "Gelang dengan ornamen ukiran dekoratif berwarna emas."
+  },
+  {
+    "id": 20,
+    "nama": "Tusuk Konde Emas",
+    "kategori": "aksesoris",
+    "harga": 70000,
+    "gambar": "img/tusuk-konde-emas.jpg",
+    "deskripsi": "Aksesori rambut dengan hiasan bunga berwarna emas."
+  }
+]
